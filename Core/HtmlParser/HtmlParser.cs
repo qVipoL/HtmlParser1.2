@@ -10,10 +10,10 @@ namespace HtmlParser.Core.HtmlParser
 {
     class HtmlParser : IParser<string[]>
     {
-        public string[] Parse(IHtmlDocument document)
+        public string[] Parse(IHtmlDocument document, string query)
         {
             var list = new List<string>();
-            var items = document.QuerySelectorAll("a").Where(item => item.ClassName != null);
+            var items = document.QuerySelectorAll(query).Where(item => item.TextContent != null);
 
             foreach (var item in items)
             {

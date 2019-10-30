@@ -15,6 +15,8 @@ namespace HtmlParser.Core
 
         HtmlLoader loader;
 
+        string query;
+
         bool isWorking;
 
         public IParser<T> Parser
@@ -54,6 +56,18 @@ namespace HtmlParser.Core
             }
         }
 
+        public string Query
+        {
+            get
+            {
+                return query;
+            }
+            set
+            {
+                this.query = value;
+            }
+        }
+
         public event Action<object> OnCompleted;
 
         public ParseWorker(IParser<T> parser)
@@ -85,7 +99,7 @@ namespace HtmlParser.Core
 
             var htmlDocument = await domParser.ParseDocumentAsync(source);
 
-            var result = MyParser.Parse(htmlDocument);
+            var result = MyParser.Parse(htmlDocument, this.query);
 
             OnCompleted?.Invoke(this);
             isWorking = false;

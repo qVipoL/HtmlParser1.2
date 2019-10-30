@@ -10,12 +10,10 @@ namespace HtmlParser.Core.HtmlParser
     class HtmlParserSettings : IParserSettings
     {
         public string Url { get; set; }
-        public string Query { get; set; }
 
-        public HtmlParserSettings(string url, string query)
+        public HtmlParserSettings(string url)
         {
             this.Url = url;
-            this.Query = query;
         }
     }
 }

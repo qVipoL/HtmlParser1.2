@@ -10,7 +10,5 @@ namespace HtmlParser.Core.Interfaces
     {
         string Url { get; set; }
 
-        string Query { get; set; }
-
     }
 }

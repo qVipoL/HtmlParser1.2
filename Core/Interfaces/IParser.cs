@@ -9,6 +9,7 @@ namespace HtmlParser.Core.Interfaces
 {
     interface IParser<T> where T : class
     {
-        T Parse(IHtmlDocument document);
+        T Parse(IHtmlDocument document, string query);
+
     }
 }
