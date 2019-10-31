@@ -36,6 +36,7 @@
             this.QueryBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.ClearButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // StartButton
@@ -52,16 +53,19 @@
             // ParsedInfoList
             // 
             this.ParsedInfoList.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.ParsedInfoList.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ParsedInfoList.FormattingEnabled = true;
-            this.ParsedInfoList.Location = new System.Drawing.Point(12, 99);
+            this.ParsedInfoList.ItemHeight = 24;
+            this.ParsedInfoList.Location = new System.Drawing.Point(12, 147);
             this.ParsedInfoList.Margin = new System.Windows.Forms.Padding(3, 3, 3, 8);
             this.ParsedInfoList.Name = "ParsedInfoList";
-            this.ParsedInfoList.Size = new System.Drawing.Size(776, 407);
+            this.ParsedInfoList.Size = new System.Drawing.Size(776, 364);
             this.ParsedInfoList.TabIndex = 1;
             // 
             // StopButton
             // 
             this.StopButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.StopButton.Enabled = false;
             this.StopButton.Location = new System.Drawing.Point(704, 52);
             this.StopButton.Name = "StopButton";
             this.StopButton.Size = new System.Drawing.Size(88, 34);
@@ -102,11 +106,23 @@
             this.label2.TabIndex = 6;
             this.label2.Text = "Element Query";
             // 
+            // ClearButton
+            // 
+            this.ClearButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ClearButton.Location = new System.Drawing.Point(704, 92);
+            this.ClearButton.Name = "ClearButton";
+            this.ClearButton.Size = new System.Drawing.Size(88, 34);
+            this.ClearButton.TabIndex = 7;
+            this.ClearButton.Text = "Clear";
+            this.ClearButton.UseVisualStyleBackColor = true;
+            this.ClearButton.Click += new System.EventHandler(this.ClearButton_Click);
+            // 
             // ParserForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(799, 521);
+            this.Controls.Add(this.ClearButton);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.QueryBox);
@@ -135,6 +151,7 @@
         private System.Windows.Forms.TextBox QueryBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button ClearButton;
     }
 }
 

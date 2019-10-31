@@ -12,11 +12,8 @@ namespace HtmlParser.Core
     {
         IParser<T> MyParser;
         IParserSettings parserSettings;
-
         HtmlLoader loader;
-
         string query;
-
         bool isWorking;
 
         public IParser<T> Parser
@@ -68,7 +65,7 @@ namespace HtmlParser.Core
             }
         }
 
-        public event Action<object> OnCompleted;
+        public event Action<object, T> OnCompleted;
 
         public ParseWorker(IParser<T> parser)
         {
@@ -101,7 +98,7 @@ namespace HtmlParser.Core
 
             var result = MyParser.Parse(htmlDocument, this.query);
 
-            OnCompleted?.Invoke(this);
+            OnCompleted?.Invoke(this, result);
             isWorking = false;
         }
     }

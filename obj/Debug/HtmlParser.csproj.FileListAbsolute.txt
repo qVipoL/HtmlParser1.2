@@ -1,0 +1,16 @@
+C:\Users\alfam\Desktop\Html\HtmlParser\HtmlParser\bin\Debug\HtmlParser.exe.config
+C:\Users\alfam\Desktop\Html\HtmlParser\HtmlParser\bin\Debug\HtmlParser.exe
+C:\Users\alfam\Desktop\Html\HtmlParser\HtmlParser\bin\Debug\HtmlParser.pdb
+C:\Users\alfam\Desktop\Html\HtmlParser\HtmlParser\bin\Debug\AngleSharp.dll
+C:\Users\alfam\Desktop\Html\HtmlParser\HtmlParser\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\alfam\Desktop\Html\HtmlParser\HtmlParser\bin\Debug\System.Text.Encoding.CodePages.dll
+C:\Users\alfam\Desktop\Html\HtmlParser\HtmlParser\bin\Debug\AngleSharp.xml
+C:\Users\alfam\Desktop\Html\HtmlParser\HtmlParser\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\alfam\Desktop\Html\HtmlParser\HtmlParser\obj\Debug\HtmlParser.csprojAssemblyReference.cache
+C:\Users\alfam\Desktop\Html\HtmlParser\HtmlParser\obj\Debug\HtmlParser.ParserForm.resources
+C:\Users\alfam\Desktop\Html\HtmlParser\HtmlParser\obj\Debug\HtmlParser.Properties.Resources.resources
+C:\Users\alfam\Desktop\Html\HtmlParser\HtmlParser\obj\Debug\HtmlParser.csproj.GenerateResource.cache
+C:\Users\alfam\Desktop\Html\HtmlParser\HtmlParser\obj\Debug\HtmlParser.csproj.CoreCompileInputs.cache
+C:\Users\alfam\Desktop\Html\HtmlParser\HtmlParser\obj\Debug\HtmlParser.csproj.CopyComplete
+C:\Users\alfam\Desktop\Html\HtmlParser\HtmlParser\obj\Debug\HtmlParser.exe
+C:\Users\alfam\Desktop\Html\HtmlParser\HtmlParser\obj\Debug\HtmlParser.pdb
